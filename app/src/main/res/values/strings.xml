@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Registro Vehicular</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Recargar Datos</string>
+    <string name="action_salir">Registrar Salida</string>
+    <string name="title_activity_activity_busqueda">ActivityBusqueda</string>
+    <string name="action_generar_pdf">Exportar a PDF</string>
+</resources>

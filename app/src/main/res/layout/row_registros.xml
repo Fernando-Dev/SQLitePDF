@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp">
+
+    <TextView
+        android:visibility="invisible"
+        android:text="none"
+        android:id="@+id/id_tabla_inv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:textColor="@color/colorTextSecondary"
+        android:text="5"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:layout_gravity="right"
+        android:id="@+id/pasajeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_carro"
+            android:src="@drawable/ic_detalles"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_toRightOf="@+id/img_carro"
+            android:layout_toEndOf="@+id/img_carro">
+
+            <TextView
+                    android:textColor="@color/colorTextSecondary"
+                android:id="@+id/placas"
+                android:text="XRT-34-FXF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorTextPrimary"
+                android:text="Ferrari Rojo, Modelo: Aventador"
+                android:id="@+id/detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorTextSecondary"
+                android:text="Actividades a realizar."
+                android:id="@+id/actividades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:textColor="@color/colorTextPrimary"
+                android:text="23/03/16 14:47:06"
+                android:id="@+id/entrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorTextPrimary"
+                android:text="--.---.----."
+                android:id="@+id/salida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

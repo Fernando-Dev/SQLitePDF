@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.omarvm.pruebassqlite.AddRegistro">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:id="@+id/view">
+
+       <LinearLayout
+           android:paddingBottom="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="7dp"
+                android:src="@drawable/ic_matricula"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/matricula_ima" />
+
+            <ImageView
+                android:layout_margin="7dp"
+                android:src="@drawable/ic_detalles"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/matricula_ima" />
+
+            <ImageView
+                android:layout_margin="7dp"
+                android:src="@drawable/ic_cuantos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/editText"
+                android:layout_below="@+id/matricula_ima" />
+
+            <ImageView
+                android:layout_margin="7dp"
+                android:src="@drawable/ic_actividades"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/editText"
+                android:layout_below="@+id/matricula_ima" />
+
+        </LinearLayout>
+
+           <LinearLayout
+               android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="textCapCharacters"
+                android:layout_margin="10dp"
+                android:hint="Matricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/placas_in" />
+
+            <EditText
+                android:inputType="textCapSentences"
+                android:id="@+id/detalles_in"
+                android:layout_margin="10dp"
+                android:hint="Modelo/Color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/pasajeros_in"
+                android:layout_margin="10dp"
+                android:hint="Numero de Personas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="textCapSentences"
+                android:id="@+id/actividades_in"
+                android:layout_margin="10dp"
+                android:hint="Actividades a Realizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout></LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/addRegistroButton"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorText"
+        android:text="Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
